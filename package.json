@@ -4,23 +4,52 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev2": "next dev -p 3050",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write \"src/**/*\"",
+    "prettier:check": "prettier --check \"src/**/*\""
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.16.1",
+    "@mui/x-date-pickers": "^7.10.0",
+    "@reduxjs/toolkit": "^2.2.6",
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "cookies-next": "^4.2.1",
+    "firebase": "^10.12.3",
+    "firebase-admin": "^12.2.0",
+    "firebase-functions": "^5.0.1",
+    "framer-motion": "^11.3.2",
+    "moment": "^2.30.1",
+    "next": "14.2.5",
+    "next-auth": "^4.24.7",
+    "notistack": "^3.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-icons": "^5.2.1",
+    "react-number-format": "^5.4.0",
+    "react-redux": "^9.1.2",
+    "react-to-print": "^2.15.1",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.77.8",
+    "sweetalert2": "^11.12.2",
+    "use-debounce": "^10.0.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@types/redux": "^3.6.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
