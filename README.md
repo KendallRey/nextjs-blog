@@ -20,6 +20,35 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Setting Up CORS for Firebase Storage
+
+Fetching / loading file from Firebase storage directly to your browser / `development server` localhost:3000, 
+you must configure your CORS;
+
+- Open [https://cloud.google.com/storage/docs/gsutil_install] and install Google gsutil.
+- Open `Google Cloud CLI`.
+- Login your Firebase credentials.
+- Select your `cloud project`.
+- Open directory
+```bash
+start .
+```
+- Copy and paste this content to `cors.json`, (create this file).
+  - `origin` is array of URLs, "*" sets any URLs.
+```json
+[
+  {
+    "origin": ["*"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]
+```
+- Run this to set your CORS
+```bash
+gsutil cors set cors.json gs://<your-cloud-storage-bucket>
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
