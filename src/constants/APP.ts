@@ -1,30 +1,30 @@
 const ID = ":id:";
 
-const PRODUCT = {
-  NAME: "Product",
-  LINK: "/admin/product",
-  PRODUCT_ID: `/admin/product?id=${ID}`,
+const WORK = {
+  NAME: "Work",
+  LINK: "/admin/work",
+  WORK_ID: `/admin/work?id=${ID}`,
 } as const;
 
-const CATEGORY = {
-  NAME: "Category",
+const ABOUT = {
+  NAME: "About",
   LINK: "/admin/category",
-  CATEGORY_ID: `/admin/category?id=${ID}`,
+  ABOUT_ID: `/admin/category?id=${ID}`,
 } as const;
 
-const TRANSACTION = {
-  NAME: "Transaction",
-  LINK: "/admin/transaction",
-  TRANSACTION_ID: `/admin/transaction?id=${ID}`,
+const PROJECTS = {
+  NAME: "Projects",
+  LINK: "/admin/projects",
+  TRANSACTION_ID: `/admin/projects?id=${ID}`,
 } as const;
 
 export const APP = {
   ID: ID,
   ROUTES: {
     ADMIN: {
-      PRODUCT,
-      CATEGORY,
-      TRANSACTION,
+      WORK,
+      ABOUT,
+      PROJECTS,
     },
   },
 } as const;
