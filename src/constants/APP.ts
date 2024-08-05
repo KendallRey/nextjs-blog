@@ -8,8 +8,8 @@ const WORK = {
 
 const ABOUT = {
   NAME: "About",
-  LINK: "/admin/category",
-  ABOUT_ID: `/admin/category?id=${ID}`,
+  LINK: "/admin/about",
+  ABOUT_ID: `/admin/about?id=${ID}`,
 } as const;
 
 const PROJECTS = {
