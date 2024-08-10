@@ -3,7 +3,7 @@ import MuiTypography from "@/components/typography/Typograph";
 import React from "react";
 import { LabelImportantOutlined } from "@mui/icons-material";
 
-const ProjectListCard = () => {
+const WorkListCard = () => {
   return (
     <MuiBox className="w-full md:w-[700px] sm:w-[320px]">
       <div className="flex gap-6">
@@ -30,4 +30,4 @@ const ProjectListCard = () => {
   );
 };
 
-export default ProjectListCard;
+export default WorkListCard;
