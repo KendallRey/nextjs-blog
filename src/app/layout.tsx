@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 const lora = Lora({ subsets: ["cyrillic"] });
