@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL, deleteObject } from "firebase/storage";
+import { storage } from "../config";
 
 /**
  * A custom hook for uploading and deleting files in Firebase Storage.
@@ -29,7 +30,6 @@ export const useFirebaseStorage = () => {
     setError(null);
     setProgress(0);
 
-    const storage = getStorage();
     const storageRef = ref(storage, path);
     const uploadTask = uploadBytesResumable(storageRef, file);
 
