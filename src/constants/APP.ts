@@ -1,9 +1,9 @@
 const ID = ":id:";
 
 const WORK = {
-  NAME: "Work",
-  LINK: "/admin/work",
-  WORK_ID: `/admin/work?id=${ID}`,
+  NAME: "Works",
+  LINK: "/admin/works",
+  WORK_ID: `/admin/works?id=${ID}`,
 } as const;
 
 const ABOUT = {

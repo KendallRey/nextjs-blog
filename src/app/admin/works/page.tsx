@@ -6,7 +6,7 @@ import React from "react";
 const WorkPage = () => {
   return (
     <Dashboard className="flex flex-col gap-8">
-      <MuiTypography fontSize={40}>Work</MuiTypography>
+      <MuiTypography fontSize={40}>Works</MuiTypography>
       <MuiBox></MuiBox>
     </Dashboard>
   );
