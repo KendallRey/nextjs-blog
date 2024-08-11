@@ -1,7 +1,7 @@
 const REDUX_SLICE = {
   SAMPLE: "sample-slice",
-  PRODUCT: "product-slice",
-  PRODUCT_FORM: "product-form-slice",
+  WORK: "work-slice",
+  WORK_FORM: "work-form-slice",
   CATEGORY_FORM: "category-form-slice",
 } as const;
 
