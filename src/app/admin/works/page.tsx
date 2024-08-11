@@ -1,9 +1,10 @@
 import Dashboard from "@/app/ui/dashboard/Dashboard";
-import MuiBox from "@/components/box/Box";
 import MuiTypography from "@/components/typography/Typograph";
 import React from "react";
 import WorkList from "./ui/WorkList";
 import WorkListFilter from "./ui/WorkListFilter";
+import CreateWorkDialog from "./ui/CreateWorkDialog";
+import WorkActions from "./ui/WorkActions";
 
 const WorkPage = () => {
   return (
@@ -12,8 +13,11 @@ const WorkPage = () => {
         Works
       </MuiTypography>
       <MuiTypography variant="body1">A description</MuiTypography>
+      <WorkActions />
       <WorkListFilter />
       <WorkList />
+
+      <CreateWorkDialog />
     </Dashboard>
   );
 };
