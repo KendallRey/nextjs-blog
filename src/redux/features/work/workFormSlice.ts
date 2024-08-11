@@ -6,8 +6,8 @@ import { createSlice } from "@reduxjs/toolkit";
 type IWorkFormState = IReduxFormState<IWorFormSchema>;
 
 export const INITIAL_STATE: IWorkFormState = {
-  error: {}
-}
+  error: {},
+};
 
 const workFormSlice = createSlice({
   name: REDUX.SLICE.WORK_FORM,
@@ -16,14 +16,9 @@ const workFormSlice = createSlice({
     setWorkForm: setFormAction<IWorFormSchema>,
     editWorkForm: editFormAction<IWorFormSchema>,
     setWorkFormError: setFormErrorAction<IWorFormSchema>,
-    clearWorkForm: () => INITIAL_STATE, 
+    clearWorkForm: () => INITIAL_STATE,
   },
 });
 
-export const {
-  setWorkForm,
-  editWorkForm,
-  setWorkFormError,
-  clearWorkForm,
-} = workFormSlice.actions;
+export const { setWorkForm, editWorkForm, setWorkFormError, clearWorkForm } = workFormSlice.actions;
 export default workFormSlice.reducer;

@@ -1,6 +1,7 @@
 export const TEXT = {
   MAX: {
     NAME: 50,
+    TITLE: 100,
     SHORT: 20,
     MEDIUM: 128,
     LONG: 256,
