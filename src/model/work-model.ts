@@ -7,6 +7,7 @@ export const WorkModel = BaseSchema.merge(
     title: stringRequired,
     post_date: stringOptional,
     description: stringRequired,
+    attachment_ids: z.array(z.string()),
   }),
 );
 export type IWorkModel = z.infer<typeof WorkModel>;

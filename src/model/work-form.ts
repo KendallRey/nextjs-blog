@@ -6,8 +6,8 @@ import { BaseFormUpdateSchema } from "./form/update";
 export const WorFormSchema = WorkModel;
 export type IWorFormSchema = z.infer<typeof WorFormSchema>;
 
-export const CreateWorSchema = BaseFormCreateSchema.merge(WorkModel);
-export type ICreateWorSchema = z.infer<typeof CreateWorSchema>;
+export const CreateWorkSchema = BaseFormCreateSchema.merge(WorkModel);
+export type ICreateWorSchema = z.infer<typeof CreateWorkSchema>;
 
-export const UpdateWorSchema = BaseFormUpdateSchema.merge(WorkModel);
-export type IUpdateWorSchema = z.infer<typeof UpdateWorSchema>;
+export const UpdateWorkSchema = BaseFormUpdateSchema.merge(WorkModel);
+export type IUpdateWorkSchema = z.infer<typeof UpdateWorkSchema>;

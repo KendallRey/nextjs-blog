@@ -5,6 +5,8 @@ import sampleSlice from "../features/sample/sampleSlice";
 import { sampleApi } from "../features/sample/sampleApi";
 import unsavedChangesSlice from "../features/prompt/unsavedChangesSlice";
 import workFormSlice from "../features/work/workFormSlice";
+import workSlice from "../features/work/workSlice";
+import workDialogSlice from "../features/work/workDialogSlice";
 
 const persistConfig = {
   key: "root",
@@ -14,6 +16,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   sampleSlice: sampleSlice,
+  workSlice: workSlice,
+  workDialogSlice: workDialogSlice,
   workFormSlice: workFormSlice,
   [sampleApi.reducerPath]: sampleApi.reducer,
   unsavedChangesSlice,

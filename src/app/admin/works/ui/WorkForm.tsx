@@ -19,7 +19,7 @@ const WorkForm = () => {
   );
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
       <MuiTextField
         label="Title"
         name="Title"

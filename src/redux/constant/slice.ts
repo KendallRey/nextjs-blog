@@ -2,6 +2,7 @@ const REDUX_SLICE = {
   SAMPLE: "sample-slice",
   WORK: "work-slice",
   WORK_FORM: "work-form-slice",
+  WORK_DIALOG: "work-dialog-slice",
   CATEGORY_FORM: "category-form-slice",
 } as const;
 

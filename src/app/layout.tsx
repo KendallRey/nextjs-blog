@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
 import "./globals.scss";
+import Providers from "@/services/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 const lora = Lora({ subsets: ["cyrillic"] });
@@ -17,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex min-h-screen justify-center gap-8`}>{children}</body>
+      <body className={`${inter.className} flex min-h-screen justify-center gap-8`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
