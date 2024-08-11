@@ -33,7 +33,8 @@ const useWorkAttachment = () => {
             throw new Error(ERRORS.GENERIC.VALIDATION_FAILED);
           }
 
-          transaction.set(workAttachmentDoc, data);
+          const createData = transformData(data, METHOD.POST);
+          transaction.set(workAttachmentDoc, createData);
 
           await addDoc(actionLogCollectionRef, {
             userId: null,
@@ -79,7 +80,8 @@ const useWorkAttachment = () => {
             throw new Error(ERRORS.GENERIC.VALIDATION_FAILED);
           }
 
-          transaction.update(workAttachmentDoc, data);
+          const updateData = transformData(data, METHOD.PUT);
+          transaction.update(workAttachmentDoc, updateData);
 
           await addDoc(actionLogCollectionRef, {
             userId: null,
