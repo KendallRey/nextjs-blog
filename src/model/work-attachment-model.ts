@@ -6,7 +6,7 @@ export const WORK_ATTACHMENT_TYPE = {
   VIDEO: "video",
   MODEL: "model",
   IMAGE: "image",
-};
+} as const;
 export type IWorkAttachmentType = (typeof WORK_ATTACHMENT_TYPE)[keyof typeof WORK_ATTACHMENT_TYPE];
 
 export const WorkAttachmentModel = BaseSchema.merge(
